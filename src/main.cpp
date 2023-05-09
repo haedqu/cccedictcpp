@@ -1,17 +1,7 @@
 #include <iostream>
-#include <fstream>
-#include <string>
+#include "Dictionary.h"
 
 int main(int argc, char** argv)
 {
-    std::ifstream dictionary("dictionary");
-
-    for (int i = 0; i < 100; i++)
-    {
-        std::string line;
-
-        std::getline(dictionary, line);
-
-        std::cout << line << std::endl;
-    }
+    Dictionary dictionary;
 }
