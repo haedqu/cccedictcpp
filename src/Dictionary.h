@@ -1,18 +1,12 @@
 #include <vector>
 #include <fstream>
 #include <string>
-
-class Entry
-{
-public:
-    std::string words[3];
-    std::string definition;
-};
+#include <unordered_map>
 
 class Dictionary
 {
 public:
     Dictionary();
 private:
-    std::vector<Entry> entries;
+    std::unordered_map<std::string, std::string> entries;
 };
