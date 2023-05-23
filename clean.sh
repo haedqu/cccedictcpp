@@ -1,0 +1,2 @@
+rm cccedictcpp
+rm *.o

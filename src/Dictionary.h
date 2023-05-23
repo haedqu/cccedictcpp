@@ -7,6 +7,8 @@ class Dictionary
 {
 public:
     Dictionary();
+
+    std::string GetDefinition(const std::string& word);
 private:
     std::unordered_map<std::string, std::string> entries;
 };

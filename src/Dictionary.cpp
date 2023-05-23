@@ -68,8 +68,11 @@ Dictionary::Dictionary()
         for (int i = 0; i < words.size(); i++)
         {
             entries[words[i]] = definition;
-
-            std::cout << words[i] << std::endl;
         }
     }
+}
+
+std::string Dictionary::GetDefinition(const std::string &word)
+{
+    return entries[word];
 }
