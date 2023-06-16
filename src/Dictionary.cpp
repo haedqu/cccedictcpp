@@ -67,7 +67,7 @@ Dictionary::Dictionary()
 
         for (int i = 0; i < words.size(); i++)
         {
-            entries[words[i]] = definition;
+            entries.insert({words[i], definition});
         }
     }
 }
